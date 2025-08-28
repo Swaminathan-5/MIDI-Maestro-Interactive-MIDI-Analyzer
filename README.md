@@ -24,7 +24,7 @@ An interactive, emoji-rich analyzer for music creators and learners. Detects ðŸŽ
 
 <div align="center">
 
-[![Live Demo UI](https://img.shields.io/badge/Live%20Demo-Streamlit%20UI-ff4b4b?style=for-the-badge&logo=streamlit)](http://localhost:8501)
+[![Live Demo UI](https://img.shields.io/badge/Live%20Demo-Streamlit%20UI-ff4b4b?style=for-the-badge&logo=streamlit)](https://midi-maestro-interactive-midi-analyzer.streamlit.app/)
 [![Alt Port](https://img.shields.io/badge/Alt%20Port-8502-orange?style=for-the-badge)](http://localhost:8502)
 [![Interactive Chords](https://img.shields.io/badge/Interactive-Chords-1f77b4?style=for-the-badge&logo=plotly)](enhanced_outputs/demo_interactive_chords.html)
 [![3D Piano Roll](https://img.shields.io/badge/Interactive-3D%20Piano%20Roll-2ca02c?style=for-the-badge&logo=plotly)](enhanced_outputs/demo_3d_piano_roll.html)
