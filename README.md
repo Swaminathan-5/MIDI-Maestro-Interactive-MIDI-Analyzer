@@ -103,13 +103,13 @@ graph TB
     B --> F[🎵 Melody/Notes]
     B --> G[📈 Visualizer]
 
-    style A fill:#ff6b6b
-    style B fill:#4ecdc4
-    style C fill:#45b7d1
-    style D fill:#96ceb4
-    style E fill:#feca57
-    style F fill:#ff9ff3
-    style G fill:#54a0ff
+    style A fill:#ff6b6b,color:#000000
+    style B fill:#4ecdc4,color:#000000
+    style C fill:#45b7d1,color:#000000
+    style D fill:#96ceb4,color:#000000
+    style E fill:#feca57,color:#000000
+    style F fill:#ff9ff3,color:#000000
+    style G fill:#54a0ff,color:#000000
 ```
 
 </div>
