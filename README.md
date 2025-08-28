@@ -274,14 +274,6 @@ Open files like `demo_interactive_chords.html` and `demo_3d_piano_roll.html` in 
 
 ---
 
-## 📸 Gallery (placeholders)
-
-![summary](https://user-images.githubusercontent.com/placeholder/1200x700?text=Streamlit+Summary)
-![chords](https://user-images.githubusercontent.com/placeholder/1200x700?text=Chord+Timeline)
-![rhythm](https://user-images.githubusercontent.com/placeholder/1200x700?text=Rhythm+%26+Density)
-
----
-
 ## 🤝 Contributing
 
 1. 🍴 Fork the repo  
