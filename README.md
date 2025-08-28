@@ -143,6 +143,9 @@ source .venv/bin/activate
 
 #### 📦 Step 2: Install dependencies
 ```bash
+# Local/dev: you can use either file
+pip install -r requirements.txt
+# or
 pip install -r enhanced_requirements.txt
 ```
 
@@ -314,6 +317,12 @@ Then relaunch the app:
 ```bash
 streamlit run streamlit_app.py --server.address 127.0.0.1 --server.port 8502
 ```
+
+### Deploy to Streamlit Cloud
+1. Push this repo to GitHub.
+2. On Streamlit Cloud, create a new app and point it to `streamlit_app.py`.
+3. Ensure `requirements.txt` is present at the repo root (this project includes it).
+4. If you still see missing modules (e.g., `matplotlib`), confirm they are pinned in `requirements.txt` and redeploy.
 
 ---
 
