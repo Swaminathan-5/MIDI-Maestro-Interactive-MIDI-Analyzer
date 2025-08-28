@@ -22,6 +22,17 @@ An interactive, emoji-rich analyzer for music creators and learners. Detects �
 
 ---
 
+<div align="center">
+
+[![Live Demo UI](https://img.shields.io/badge/Live%20Demo-Streamlit%20UI-ff4b4b?style=for-the-badge&logo=streamlit)](http://localhost:8501)
+[![Alt Port](https://img.shields.io/badge/Alt%20Port-8502-orange?style=for-the-badge)](http://localhost:8502)
+[![Interactive Chords](https://img.shields.io/badge/Interactive-Chords-1f77b4?style=for-the-badge&logo=plotly)](enhanced_outputs/demo_interactive_chords.html)
+[![3D Piano Roll](https://img.shields.io/badge/Interactive-3D%20Piano%20Roll-2ca02c?style=for-the-badge&logo=plotly)](enhanced_outputs/demo_3d_piano_roll.html)
+[![Sonification](https://img.shields.io/badge/Interactive-Sonification-9467bd?style=for-the-badge&logo=plotly)](enhanced_outputs/demo_sonification.html)
+
+</div>
+
+
 ## ✨ What Makes MIDI Maestro Special?
 
 <div align="center">
@@ -138,8 +149,8 @@ pip install -r enhanced_requirements.txt
 #### 🚀 Step 3: Launch Streamlit UI
 ```bash
 streamlit run streamlit_app.py
-# If the default port is busy:
-streamlit run streamlit_app.py --server.port 8502
+# If the default port is busy or you prefer a specific port:
+streamlit run streamlit_app.py --server.address 127.0.0.1 --server.port 8502
 ```
 
 </div>
@@ -150,7 +161,7 @@ streamlit run streamlit_app.py --server.port 8502
 
 | 🎯 Service | 🌐 URL | 📝 Description |
 |:--|:--:|:--|
-| 🌐 Web Interface | `http://localhost:8501` | Interactive Streamlit UI |
+| 🌐 Web Interface | `http://localhost:8501` (or `:8502`) | Interactive Streamlit UI |
 
 </div>
 
@@ -243,6 +254,28 @@ Open files like `demo_interactive_chords.html` and `demo_3d_piano_roll.html` in 
 
 ---
 
+## 🎬 Live Demo
+
+You can experience the analysis without writing any code:
+
+- Open the Streamlit UI in your browser:
+  - `http://localhost:8501` (or `http://localhost:8502` if you launched with that port)
+  - Upload a `.mid` file or check “Use sample Pirates.mid”, then click “Run Analysis”.
+
+- Explore the interactive HTML exports directly (generated after running either the UI or CLI):
+  - `enhanced_outputs/demo_interactive_chords.html`
+  - `enhanced_outputs/demo_3d_piano_roll.html`
+  - `enhanced_outputs/demo_sonification.html`
+
+If the files aren’t present yet, run the sample analysis:
+```bash
+python enhanced_midi_analyzer.py --midi Pirates.mid --outdir enhanced_outputs
+```
+
+The analysis also writes images and CSV/JSON into `enhanced_outputs/` that you can view or import elsewhere.
+
+---
+
 ## 📊 UI Summary (Example)
 
 - 🎼 Key: C Major  
@@ -271,6 +304,16 @@ Open files like `demo_interactive_chords.html` and `demo_3d_piano_roll.html` in 
 - Port already in use → `--server.port 8502`  
 - 3D PNG export requires Google Chrome (HTML export works without)  
 - Windows emoji issues → run Python with `-X utf8` or set UTF‑8 terminal  
+
+### Streamlit/Plotly startup errors
+- If you see errors during Streamlit startup related to Plotly templates or Candlestick initialization, pin versions known to work well together:
+```bash
+pip install "streamlit==1.32.2" "plotly==5.19.0"
+```
+Then relaunch the app:
+```bash
+streamlit run streamlit_app.py --server.address 127.0.0.1 --server.port 8502
+```
 
 ---
 
