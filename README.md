@@ -317,14 +317,6 @@ streamlit run streamlit_app.py --server.address 127.0.0.1 --server.port 8502
 
 ---
 
-## 📸 Gallery (placeholders)
-
-![summary](https://user-images.githubusercontent.com/placeholder/1200x700?text=Streamlit+Summary)
-![chords](https://user-images.githubusercontent.com/placeholder/1200x700?text=Chord+Timeline)
-![rhythm](https://user-images.githubusercontent.com/placeholder/1200x700?text=Rhythm+%26+Density)
-
----
-
 ## 🤝 Contributing
 
 1. 🍴 Fork the repo  
